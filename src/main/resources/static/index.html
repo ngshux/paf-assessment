@@ -12,5 +12,29 @@
 <body>
   <app-root></app-root>
 <script src="runtime.333e5c9206d3987b.js" type="module"></script><script src="polyfills.2f476ae5aba6c940.js" type="module"></script><script src="main.5b589088f2c50942.js" type="module"></script>
+<table>
+  <form method = "POST" action = "/order" >
+    <tr>
+      <td>Name</td>
+    </tr>
+    <tr>
+      <td><input width="100%" type="text" name="username" required></td>
+    </tr>
+    <tr>
+      <td><button type="submit" name="checkout" disabled>Checkout</button></td>
+      <td><button id="clear" >Clear</button></td>
+      <td><button id="add" >Add</button></td>
+    </tr>
+    <tr>
+        <td>Item</td>
+        <td>Quantity</td>
+    </tr>
+    <tr>
+        <td><input type="text" name="item"></td>
+        <td><input type="number" name="quantity" min="1" value="1"></td>
+        <td><button id="remove">X</button></td>
+    </tr>
 
+  </form>
+</table>
 </body></html>
